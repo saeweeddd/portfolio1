@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saeed Portfolio</title>
+
+<!-- HECTOR LIGHT FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Hector:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Hector", sans-serif;
+        background: #ffffff;
+        color: #111;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+        font-weight: 300 !important;
+        letter-spacing: 0.4px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* PROFILE */
+    .profile {
+        text-align: center;
+        padding: 50px 20px 20px;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 4px solid #eee;
+        box-shadow: 0 4px 22px rgba(0,0,0,0.08);
+    }
+
+    .profile h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .profile p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-top: 6px;
+    }
+
+    /* LINKS */
+    .links {
+        margin-top: 22px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .links a {
+        padding: 10px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        color: #111;
+        font-size: 0.9rem;
+        transition: 0.25s;
+    }
+
+    .links a:hover {
+        background: #111;
+        color: #fff;
+        border-color: #111;
+    }
+
+    /* ABOUT */
+    .about {
+        text-align: center;
+        padding: 40px 20px 10px;
+    }
+
+    .about h2 {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+
+    .about p {
+        max-width: 650px;
+        margin: auto;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* TITLES */
+    h2.section-title {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 1.7rem;
+    }
+
+    /* GALLERY */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        aspect-ratio: 4 / 5;  /* PERFECT 4x5 RATIO */
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    /* VIDEOS */
+    .videos {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .videos a img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        transition: 0.25s;
+    }
+
+    .videos a img:hover {
+        transform: scale(1.03);
+    }
+
+    /* FULL MOBILE RESPONSIVE */
+    @media (max-width: 700px) {
+        .gallery,
+        .videos {
+            grid-template-columns: 1fr;
+        }
+
+        .profile {
+            padding: 40px 20px 10px;
+        }
+
+        .profile h1 {
+            font-size: 1.7rem;
+        }
+
+        .gallery img,
+        .videos a img {
+            width: 100%;
+        }
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #888;
+        font-size: 0.9rem;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PROFILE -->
+    <section class="profile">
+        <img src="s1.png" alt="Profile Photo">
+        <h1>Saeed Ali Qasim</h1>
+        <p>Photographer & Filmmaker</p>
+
+        <div class="links">
+            <a href="https://www.instagram.com/saedaliqasem">Instagram</a>
+            <a href="https://youtube.com/@saedaliqasem">YouTube</a>
+            <a href="https://facebook.com/saedaliqasem">Facebook</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Saeed, a 21-year-old filmmaker and photographer from Kurdistan  
+            with over 6 years of experience in cinematic visuals and modern photography.  
+            Currently studying IT, I blend creativity with technology to produce  
+            clean, high-quality visual work.
+        </p>
+    </section>
+
+    <!-- PHOTOS -->
+    <h2 class="section-title">Photography</h2>
+    <div class="gallery">
+        <img src="s5.jpg">
+        <img src="s4.PNG">
+        <img src="s3.png">
+    </div>
+
+    <!-- VIDEOS -->
+    <h2 class="section-title">Films</h2>
+    <div class="videos">
+        <a href="https://www.instagram.com/reel/DLkoEeUN-MB/?igsh=dDE1d3hoM2hqd2tj" target="_blank">
+            <img src="v3.jpg">
+        </a>
+
+        <a href="https://www.instagram.com/reel/DO0lo7TCLRL/?igsh=eGJ6andmaGs5cnp1" target="_blank">
+            <img src="v2.jpg">
+        </a>
+
+        <a href="https://www.instagram.com/reel/DOJMA_EjkJn/?igsh=MTN0MndxN21ocXg2NA==" target="_blank">
+            <img src="v1.jpg">
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Saeed Ali Qasim — All Rights Reserved.
+</footer>
+
+</body>
+</html>
